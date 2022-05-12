@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "image_galleries",
+  "info": {
+    "singularName": "image-gallery",
+    "pluralName": "image-galleries",
+    "displayName": "imageGallery",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}
